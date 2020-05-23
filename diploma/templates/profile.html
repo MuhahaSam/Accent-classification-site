@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block profile %}
+      <form  action="{% url 'upload' %}" enctype="multipart/form-data" method="POST" id="upload_form"><!--action="{% url 'upload' %}"-->
+        {% csrf_token %}
+          <p style="margin: 20px" >Progile photo</p>
+          {{ form.avatar }}
+          <p style="margin: 20px" >name</p>
+          {{ form.name }}
+          <p style="margin: 20px" >about you</p>
+          {{ from.SelfIntroduce}}
+
+       <button type="submit" class="btn btn-primary" id="true_upload" style="margin: 20px">загрузить</button>
+        </form>
+
+{% endblock %}

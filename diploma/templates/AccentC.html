@@ -1,0 +1,24 @@
+{% extends "audio.html" %}
+
+
+{% block audio %}
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Your result</h5>
+    <h6 class="card-subtitle mb-2 text-muted">here you can see similarity of your english pronunciation</h6>
+      {% if accent %}
+    <p class="card-text"> you have native english!! </p>
+      {% endif %}
+
+       {% if not accent %}
+    <p class="card-text"> you have accent </p>
+      {% endif %}
+
+    <a href="#" class="card-link">Ссылка карты</a>
+    <a href="#" class="card-link">Другая ссылка</a>
+  </div>
+</div>
+
+
+{% endblock %}

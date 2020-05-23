@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+      .reg{
+        margin-top: 30px;
+        padding-top: 50px;
+      }
+      .bak {
+        background: black;
+        width: available;
+      }
+      .backg{
+        width: available;
+        height: 500px;
+      }
+      .end {
+        width: 1800px;
+        height: available;
+      }
+      .bod{
+        background: gainsboro;
+      }
+      .log {
+        background: white;
+      }
+        .error{
+            color: red;
+        }
+        .prof{
+            margin-top: 50px;
+            padding-bottom: 50px;
+        }
+        .main{
+            background: white;
+        }
+        .text{
+            background: cornsilk;
+        }
+        .mar{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+    </style>
+
+
+</head>
+<body class="bod">
+<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Accent recognition</a>
+</nav>
+{% block nav %}
+
+{% endblock %}
+
+{% block login %}
+<div class="row backg">
+  <div class="col-6 bak backg">
+
+
+  </div>
+
+  <div class="col-sm-6 log">
+     <form action="{% url 'sig' %}" class="backg col-sm-6"  method="POST">
+         {% csrf_token %}
+    <div class="form-group ">
+    <label for="username">Nick name</label>
+    <input class="form-control" id="username" aria-describedby="emailHelp" name="login">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" name="passwd">
+  </div>
+
+  <button type="submit"  class="btn btn-primary btn-dark">login</button>
+       <div class="col-sm-2"></div>
+
+       <a href="{% url 'reg' %}">registration</a>
+</form>
+      {% if error %}
+    <p class="error"> please enter valid values</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock  %}
+
+
+
+{%block audio %}
+
+{% endblock %}
+
+
+<footer class="container py-5 end">
+<div class="row">
+    <div class="col-12 col-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+      <small class="d-block mb-3 text-muted">© 2015-2020</small>
+    </div>
+    <div class="col-6 col-sm">
+      <h5>Creator</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">BMSTU</a></li>
+        <li><a class="text-muted" href="#">IU5-81</a></li>
+        <li><a class="text-muted" href="#">Samuel Kim</a></li>
+      </ul>
+    </div>
+
+
+</div>
+</footer>
+</body>
+</html>

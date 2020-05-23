@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form enctype="multipart/form-data" class="col-md-6"  method="POST" action="{% url 'ex' %}" >
+              {% csrf_token %}
+              <label >audio record</label>
+    <input type="file" name="file">
+  <button type="submit" class="btn btn-primary mar">Upload</button>
+      </form>
+
+</body>
+</html>

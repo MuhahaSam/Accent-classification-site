@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block nav %}
+{% endblock %}
+
+{% block login %}
+<div class="row backg">
+  <div class="col-6 bak backg">
+
+  </div>
+
+  <div class="col-sm-6 log">
+      <H1>Registration</H1>
+    <form action="{% url 'reg' %}" class="col-sm-6" method="POST" >
+        {% csrf_token %}
+  <div class="form-group ">
+    <label >Nickname</label>
+    {{ form.username }}
+  </div>
+        <div class="form-group ">
+    <label >Email</label>
+    {{ form.email }}
+  </div>
+
+  <div class="form-group">
+    <p><label>Password</label></p>
+    {{ form.password1 }}
+  </div>
+         <div class="form-group">
+    <label>Password confirmation</label>
+    {{ form.password2 }}
+  </div>
+  <button type="submit" class="btn btn-primary btn-dark">Submit</button>
+</form>
+    {% if error %}
+    <p class="error"> please enter valid values</p>
+    {% endif %}
+
+  </div>
+
+</form>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block audio %}
+{% endblock %}
