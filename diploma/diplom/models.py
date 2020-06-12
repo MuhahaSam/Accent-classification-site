@@ -16,10 +16,6 @@ class Data(models.Model):
     class Meta:
         ordering = ['-date']
 
-
-
-
-
 class Result(models.Model):
     result = models.FloatField()
     data_id = models.ForeignKey(User, on_delete=models.CASCADE)

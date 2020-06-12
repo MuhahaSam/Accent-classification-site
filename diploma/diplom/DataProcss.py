@@ -75,7 +75,7 @@ class AccentRec():
         rate = self.rate
         my_data = self.sample
         for i in range(0, indexs.shape[0], 2):
-            difference = int(rate*5 - len(my_data[indexs[i]:indexs[i + 1]]))
+            difference = int(rate*20 - len(my_data[indexs[i]:indexs[i + 1]]))
             recc = np.concatenate((my_data[indexs[i]:indexs[i + 1]], np.zeros((difference))))
             self.save_spectogramm(file_name + "_" + str(int(i / 2)),recc ,rate, join(settings.MEDIA_ROOT,'spectogram'))
             plt.close('all')

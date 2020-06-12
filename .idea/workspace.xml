@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="11ea0ace-648c-432d-a84e-ae8767543e1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/diplom/DataProcss.py" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/diplom/DataProcss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/diplom/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/diplom/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/diploma/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/diploma/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +53,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../rip-home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lab6.py" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -82,11 +106,30 @@
       <workItem from="1590147129771" duration="17026000" />
       <workItem from="1590190799230" duration="17072000" />
       <workItem from="1590230945336" duration="615000" />
+      <workItem from="1590246252450" duration="1901000" />
+      <workItem from="1590395344722" duration="890000" />
+      <workItem from="1590417201384" duration="2111000" />
+      <workItem from="1591135122450" duration="2000000" />
+      <workItem from="1591189611774" duration="1580000" />
+      <workItem from="1591284670267" duration="1378000" />
+      <workItem from="1591428850294" duration="2655000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590107941788">
@@ -97,9 +140,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="424" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1590160465898" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1590222492895">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1590417347640">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590222492895" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590417347640" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1591138961753">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1591138961753" />
   </component>
 </project>
